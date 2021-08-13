@@ -1,4 +1,4 @@
-# Simple landing page on VueJS
+# Webinar
 
 ## Project setup
 ```

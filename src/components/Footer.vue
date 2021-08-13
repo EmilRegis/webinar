@@ -1,106 +1,60 @@
 <template>
-  <section class="footer">
-    <div class="footer__wrapper">
-      <div class="footer__block">
-        <div class="img__block">
-          <img src="@/assets/footer.png" alt="">
-        </div>
+  <footer class="footer">
+    <div class="footer__container">
+      <div class="footer__txt">... ого выгодно</div>
+      <div class="footer__img">
+        <img class="bg" src="@/assets/footer-bg.svg" alt="">
+        <img class="man" src="@/assets/footer-man.svg" alt="">
       </div>
-      <div class="footer__block">
-        <div class="footer__description">
-          <h1>Получи 3 пробных урока <br>
-            за заявку!</h1>
-          <p>
-            Оставляй заявку и получи бесплатные материалы, которые <br>
-            помогут начать работу в сфере крупных заработков
-          </p>
-          <SecondButton/>
-        </div>
-      </div>
+      <Button class="btn"/>
     </div>
-    <noscript>
-      <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NPMHBJ6" height="0" width="0" style="display:none;visibility:hidden">
-      </iframe>
-    </noscript>
-  </section>
+  </footer>
 </template>
 
 <script>
-import SecondButton from "./UI/SecondButton";
-  export default {
-    name: 'Footer',
-    components: {
-      SecondButton,
-    },
-    mounted() {
-      (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-            new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-          j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-          'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-      })(window,document,'script','dataLayer','GTM-NPMHBJ6');
-    }
+import Button from "./UI/Button";
+export default {
+  components: {
+    Button
   }
+}
+
 </script>
 
 <style lang="scss" scoped>
-  .footer {
+.footer {
+  display: flex;
+  margin-top: 10px;
+  padding: 0 14px;
+  .footer__container {
     display: flex;
-    background-color: #262626;
-    margin-top: 46px;
-    background-size: 90%;
-    @media(max-width: 1140px) {
-      flex-direction: column;
+    flex-direction: column;
+    width: 100%;
+    .footer__txt {
+      background-color: #151516;
+      border: solid #8800ff;
+      border-radius: 50%;
+      color: #8800ff;
+      width: 137px;
+      height: 32px;
     }
-    .footer__wrapper {
-      display: flex;
-      @media(max-width: 1140px) {
-        flex-direction: column;
-        margin: 22px;
+    .footer__img {
+      position: relative;
+      width: 100%;
+      .bg {
+        width: 100%;
       }
-      .footer__block {
-        display: flex;
-        .img__block {
-          width: 100%;
-          img {
-            width: 100%;
-          }
-        }
-        .footer__description {
-          display: flex;
-          flex-direction: column;
-          justify-content: center;
-          color: #FFFFFF;
-
-          h1 {
-            font-family: Raleway;
-            font-style: normal;
-            font-weight: bold;
-            font-size: 40px;
-            line-height: 47px;
-            @media(max-width: 1140px) {
-              margin-top: 15px;
-              margin-left: 9px;
-              font-weight: bold;
-              font-size: 20px;
-              line-height: 23px;
-            }
-          }
-
-          p {
-            font-family: Raleway;
-            font-style: normal;
-            font-weight: normal;
-            font-size: 18px;
-            line-height: 21px;
-            margin-top: 29px;
-            margin-bottom: 49px;
-            @media(max-width: 1140px) {
-              margin-left: 9px;
-            }
-          }
-        }
+      .man {
+        width: 100%;
+        position: absolute;
+        left: 0;
+        top: -70px;
+        z-index: 2;
       }
+    }
+    .btn {
+      z-index: 99;
     }
   }
-
+}
 </style>

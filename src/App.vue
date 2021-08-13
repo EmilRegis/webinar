@@ -1,17 +1,24 @@
 <template>
-  <div class="app">
-    <Navigation/>
-    <router-link to="/" />
-    <router-view />
+  <div class="container">
+    <Header/>
+    <Art/>
+    <Reviews/>
+    <Footer/>
   </div>
 </template>
 
 <script>
-import Navigation from '@/components/Navigation';
+import Header from "@/components/Header";
+import Art from "@/components/Art";
+import Reviews from "@/components/Reviews";
+import Footer from "@/components/Footer";
 export default {
   name: "App",
   components: {
-    Navigation,
+    Header,
+    Art,
+    Reviews,
+    Footer
   },
   metaInfo: {
     title: 'My Example App',
@@ -25,23 +32,24 @@ export default {
 </script>
 
 <style lang="scss">
-@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@200;300;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Exo+2:wght@300;400;500;700&display=swap');
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  font-family: "Raleway", sans-serif;
+  font-family: "Exo 2";
   font-weight: 400;
 }
 
-.app {
-  min-height: 100vh;
-  position: relative;
-  background-color: #f1f1f1;
+html {
+  scroll-behavior: smooth;
 }
+
+body {
+  background-color: #151516;
+}
+
 .container {
-  padding: 0 20px;
-  max-width: 1140px;
-  margin: 0 auto;
+
 }
 </style>
