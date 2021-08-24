@@ -1,11 +1,6 @@
 <template>
   <footer class="footer">
     <div class="footer__container">
-      <div class="footer__txt">... ого выгодно</div>
-      <div class="footer__img">
-        <img class="bg" src="@/assets/footer-bg.svg" alt="">
-        <img class="man" src="@/assets/footer-man.svg" alt="">
-      </div>
       <Button class="btn"/>
     </div>
   </footer>

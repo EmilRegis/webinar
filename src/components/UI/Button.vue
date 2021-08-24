@@ -21,11 +21,15 @@ export default {
 <style lang="scss" scoped>
 .btn {
   display: flex;
+  position: fixed;
+  bottom: -1px;
+  margin-top: 15px;
+  width: 100%;
   .simple-btn {
     display: inline-block;
     padding: 1.625rem 2.625rem 1.625rem 2.625rem;
     border: 1px solid #8800ff;
-    border-radius: 25px;
+    //border-radius: 25px;
     background-color: #8800ff;
     color: #000000;
     font-weight: 600;

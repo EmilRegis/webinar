@@ -1,7 +1,9 @@
 <template>
-  <div class="container">
+  <div className="container">
     <Header/>
     <Art/>
+    <Work/>
+    <Cause/>
     <Reviews/>
     <Footer/>
   </div>
@@ -9,14 +11,19 @@
 
 <script>
 import Header from "@/components/Header";
+import Work from "./components/Work";
 import Art from "@/components/Art";
+import Cause from "./components/Cause";
 import Reviews from "@/components/Reviews";
 import Footer from "@/components/Footer";
+
 export default {
   name: "App",
   components: {
     Header,
     Art,
+    Work,
+    Cause,
     Reviews,
     Footer
   },
@@ -33,6 +40,7 @@ export default {
 
 <style lang="scss">
 @import url('https://fonts.googleapis.com/css2?family=Exo+2:wght@300;400;500;700&display=swap');
+
 * {
   padding: 0;
   margin: 0;
