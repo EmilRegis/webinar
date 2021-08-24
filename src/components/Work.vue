@@ -9,7 +9,7 @@
     <div class="work__body">
       <div class="block">
         <div class="block__img">
-          <img src="@/assets/first.svg" alt="">
+          <img src="@/assets/first.png" alt="">
         </div>
         <div class="block__text">
           Вы вкладываете <br>
@@ -19,7 +19,7 @@
       </div>
       <div class="block">
         <div class="block__img">
-          <img src="@/assets/second.svg" alt="">
+          <img src="@/assets/second.png" alt="">
         </div>
         <div class="block__text">
           Мы закупаем товар <br>
@@ -29,12 +29,12 @@
       </div>
       <div class="block">
         <div class="block__img">
-          <img src="@/assets/third.svg" alt="">
+          <img src="@/assets/third.png" alt="">
         </div>
         <div class="block__text">
           Из заработанных денег <br>
           компания «Тендерная Биржа» <br>
-          отдаёт вам вам <br>
+          отдаёт вам <br>
           вклад+проценты.
         </div>
       </div>
