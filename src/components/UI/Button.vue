@@ -1,6 +1,6 @@
 <template>
   <div class="btn">
-    <a class="simple-btn button" href="https://lab.tb7.kz/invest" >Зарегистрироваться</a>
+    <a class="simple-btn button" href="https://lab.tb7.kz/invest2" >Зарегистрироваться</a>
   </div>
 </template>
 
